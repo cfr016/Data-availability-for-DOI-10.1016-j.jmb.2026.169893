@@ -1,0 +1,12 @@
+Quick MM Minimization of system
+&cntrl
+ imin=1, maxcyc=20000, ncyc=10000, ntmin=1,
+ ntpr=10000,
+ cut=8,
+ nmropt=1, 
+&end
+ &wt TYPE='DUMPFREQ', istep1=500 /
+ &wt TYPE='END' /
+ DISANG=../min_restrains.rst
+ DUMPAVE=min_2.tra
+/
